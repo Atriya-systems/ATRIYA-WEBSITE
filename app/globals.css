@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: var(--font-newsreader);
+  --font-sans: var(--font-outfit);
+  --font-body: var(--font-jakarta);
+  --font-mono: var(--font-jetbrains);
+
+  --color-gold: #4F46E5; /* Sophisticated Indigo */
+  --color-gold-hover: #4338CA;
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F8FAFC;
+  --color-bg-tertiary: #F1F5F9;
+  
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #334155;
+  --color-text-tertiary: #64748B;
+  
+  --color-border: rgba(15, 23, 42, 0.08);
+  --color-green: #10B981;
+  --color-amber: #F59E0B;
+
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans;
+  }
+}
+
+/* Custom Utilities */
+.font-display { font-family: var(--font-display); }
+.font-sans { font-family: var(--font-sans); }
+.font-body { font-family: var(--font-body); }
+.font-mono { font-family: var(--font-mono); }
+
+/* Animation Utils */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Premium Effects */
+.glass {
+  @apply bg-white/70 backdrop-blur-md border border-white/20;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-text-primary to-gold;
+}
+
+.shadow-4xl {
+  box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.15), 0 30px 60px -30px rgba(0, 0, 0, 0.2);
+}
