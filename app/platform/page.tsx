@@ -67,13 +67,13 @@ export default function PlatformOverview() {
       <section className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-12">
         <div className="relative aspect-[16/6] w-full rounded-[4rem] overflow-hidden shadow-4xl group border border-slate-100">
            <img 
-             src="/decision_lattice_platform_1775125091503.png" 
+             src="/decision_lattice_v4.png" 
              alt="ATRIYA Decision Lattice"
              className="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105"
            />
            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent"></div>
            <div className="absolute bottom-8 left-12">
-             <Badge className="bg-indigo-600 text-white border-0 font-mono text-[9px] uppercase tracking-widest font-black italic">GEOMTRIC_INTEGRITY_P19</Badge>
+             <Badge className="bg-indigo-600 text-white border-0 font-mono text-[9px] uppercase tracking-widest font-black italic">GEOMETRIC_INTEGRITY_P19</Badge>
            </div>
         </div>
       </section>

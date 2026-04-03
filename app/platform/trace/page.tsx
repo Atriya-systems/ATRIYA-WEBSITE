@@ -151,9 +151,9 @@ export default function TracePage() {
           </div>
 
           {/* Console / Logs */}
-          <div className="lg:col-span-12 bg-slate-900 rounded-[3rem] border border-slate-800 overflow-hidden shadow-4xl flex flex-col h-[600px]">
+          <div className="lg:col-span-12 bg-slate-900 rounded-3xl md:rounded-[3rem] border border-slate-800 overflow-hidden shadow-4xl flex flex-col h-[400px] md:h-[600px]">
              <div className="bg-slate-800/50 px-10 py-6 border-b border-slate-700 flex justify-between items-center">
-                <div className="flex gap-4">
+                <div className="flex gap-2">
                   <div className="w-3 h-3 rounded-full bg-red-500" />
                   <div className="w-3 h-3 rounded-full bg-amber-500" />
                   <div className="w-3 h-3 rounded-full bg-emerald-500" />
@@ -164,9 +164,9 @@ export default function TracePage() {
              <div className="flex-1 overflow-y-auto p-12 space-y-8 font-mono no-scrollbar">
                 <AnimatePresence>
                   {logs.length === 0 && (
-                    <div className="h-full flex flex-col items-center justify-center text-slate-600 space-y-6">
-                       <ScanEye size={80} strokeWidth={0.5} />
-                       <p className="text-sm uppercase tracking-widest font-black italic">System idling. No execution in progress.</p>
+                    <div className="h-full flex flex-col items-center justify-center text-slate-600 space-y-4 md:space-y-6 px-4 text-center">
+                       <ScanEye size={60} className="md:w-20 md:h-20" strokeWidth={0.5} />
+                       <p className="text-xs md:text-sm uppercase tracking-widest font-black italic">System idling. No execution in progress.</p>
                     </div>
                   )}
                   {logs.map((log, i) => (
@@ -197,7 +197,9 @@ export default function TracePage() {
              </div>
 
              <div className="bg-slate-800/20 px-10 py-6 border-t border-slate-800 flex justify-between items-center">
-                <p className="text-[10px] text-slate-500 font-mono italic">TRACE COMMIT: 0x{Math.random().toString(16).substring(2, 10).toUpperCase()}</p>
+                <p className="text-[10px] text-slate-500 font-mono italic">
+                   TRACE COMMIT: 0x{typeof window !== 'undefined' ? Math.random().toString(16).substring(2, 10).toUpperCase() : '00000000'}
+                </p>
                 <p className="text-[10px] text-slate-500 font-mono italic">CRYPTOGRAPHIC_SIGNATURE_ACTIVE</p>
              </div>
           </div>

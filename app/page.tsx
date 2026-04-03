@@ -23,10 +23,13 @@ export default function HomePage() {
     { id: "P-19", name: "Orchestration", desc: "Dynamic intent routing across multi-model environments.", icon: Workflow }
   ];
 
-  const systems = Array.from({ length: 128 }, (_, i) => ({
-    id: `E-${100 + i}`,
-    status: Math.random() > 0.1 ? 'online' : 'maintenance'
-  }));
+  const [systems, setSystems] = React.useState<{id: string, status: string}[]>([]);
+  React.useEffect(() => {
+    setSystems(Array.from({ length: 128 }, (_, i) => ({
+      id: `E-${100 + i}`,
+      status: Math.random() > 0.1 ? 'online' : 'maintenance'
+    })));
+  }, []);
 
   const metadata = ["P-04_COMMIT", "N4_KERNEL_ACTIVE", "S11_SOVEREIGN", "TR_0x41F", "P-19_ORCH"];
 
