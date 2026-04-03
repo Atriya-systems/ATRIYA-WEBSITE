@@ -58,7 +58,7 @@ export default function StatusPage() {
       <section className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-12 space-y-24 mb-48">
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {components.map((comp, i) => (
-              <div key={i} className="p-12 bg-slate-50 border border-slate-100 rounded-[4rem] hover:border-indigo-300 transition-all flex flex-col justify-between min-h-[350px]">
+              <div key={i} className="p-8 md:p-12 bg-slate-50 border border-slate-100 rounded-[3rem] md:rounded-[4rem] hover:border-indigo-300 transition-all flex flex-col justify-between min-h-[350px]">
                  <div className="space-y-12">
                     <div className="flex justify-between items-start">
                        <div className="h-16 w-16 bg-white rounded-2xl flex items-center justify-center text-slate-400 group-hover:text-indigo-600 transition-all">

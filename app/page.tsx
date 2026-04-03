@@ -71,11 +71,11 @@ export default function HomePage() {
               <p className="text-xl md:text-2xl text-slate-500 font-sans leading-relaxed font-light tracking-tight max-w-xl border-l-4 border-indigo-100 pl-8 lowercase italic not-italic first-letter:uppercase">
                  ATRIYA introduces the first non-bypassable AI governance kernel. Moving safety from policy configuration into structural necessity at nation-state scale.
               </p>
-              <div className="flex gap-4">
-                 <Button size="lg" className="h-20 px-16 bg-slate-950 text-white rounded-full shadow-4xl transition-all hover:bg-indigo-600 active:scale-95 text-xl font-light italic">
-                    <Link href="/platform/trace">Initialize Trace</Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                 <Button size="lg" className="h-16 sm:h-20 px-8 sm:px-16 w-full sm:w-auto bg-slate-950 text-white rounded-full shadow-4xl transition-all hover:bg-indigo-600 active:scale-95 text-lg sm:text-xl font-light italic">
+                    <Link href="/platform/trace" className="w-full flex justify-center">Initialize Trace</Link>
                  </Button>
-                 <Link href="/about" className="h-20 px-10 border border-slate-100 rounded-full flex items-center justify-center font-display text-slate-400 uppercase tracking-widest text-[10px] font-black hover:text-indigo-600 transition-colors">Corporate Hub →</Link>
+                 <Link href="/about" className="h-16 sm:h-20 px-10 w-full sm:w-auto border border-slate-100 rounded-full flex items-center justify-center font-display text-slate-400 uppercase tracking-widest text-[10px] font-black hover:text-indigo-600 transition-colors">Corporate Hub →</Link>
               </div>
             </motion.div>
           </div>
@@ -137,8 +137,8 @@ export default function HomePage() {
       <section className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-32 text-center space-y-16 mb-48 pb-48">
          <h2 className="text-6xl md:text-9xl font-display leading-[0.8] text-slate-950 tracking-tight font-light text-center uppercase">Certainty <br /><span className="text-indigo-600 font-medium lowercase italic not-italic">Engineered.</span></h2>
          <div className="flex justify-center pt-12">
-            <Button size="lg" className="h-28 px-48 bg-slate-950 text-white rounded-full shadow-4xl font-display text-4xl transition-all hover:bg-indigo-600 active:scale-95 italic">
-               <Link href="/contact" className="lowercase italic not-italic">Acquire Sovereign Access</Link>
+            <Button size="lg" className="h-20 md:h-28 px-8 md:px-48 w-full md:w-auto bg-slate-950 text-white rounded-full shadow-4xl font-display text-2xl md:text-4xl transition-all hover:bg-indigo-600 active:scale-95 italic">
+               <Link href="/contact" className="lowercase italic not-italic text-center w-full">Acquire Sovereign Access</Link>
             </Button>
          </div>
       </section>

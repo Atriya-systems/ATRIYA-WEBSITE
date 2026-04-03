@@ -57,7 +57,7 @@ export function Logo({ className, variant = "full", size = "md" }: LogoProps) {
       {(variant === "full" || variant === "text-only") && (
         <span 
           className={cn(
-            "font-sans font-medium tracking-[0.3em] uppercase text-current transition-colors duration-500",
+            "font-sans font-medium tracking-[0.1em] md:tracking-[0.3em] uppercase text-current transition-colors duration-500",
             currentSize.text
           )}
         >

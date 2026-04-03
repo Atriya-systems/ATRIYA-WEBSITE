@@ -102,10 +102,10 @@ export default function TracePage() {
            <Button 
              onClick={runSimulation}
              disabled={isRunning}
-             className="h-24 px-16 bg-white text-slate-950 hover:bg-indigo-500 hover:text-white rounded-full font-display text-2xl transition-all shadow-3xl disabled:opacity-50"
+             className="h-20 md:h-24 px-8 md:px-16 w-full md:w-auto bg-white text-slate-950 hover:bg-indigo-500 hover:text-white rounded-full font-display text-lg md:text-2xl transition-all shadow-3xl disabled:opacity-50"
            >
               {isRunning ? <RefreshCw className="animate-spin" /> : <PlayCircle />}
-              <span className="ml-4">{isRunning ? "EXECUTING..." : "START TRACE"}</span>
+              <span className="ml-2 md:ml-4">{isRunning ? "EXECUTING..." : "START TRACE"}</span>
            </Button>
         </div>
 

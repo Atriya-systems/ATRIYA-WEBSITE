@@ -245,8 +245,8 @@ export function Navbar() {
 // --- Footer ---
 export function Footer() {
   return (
-    <footer className="border-t border-border pt-24 pb-12 px-6 lg:px-12 bg-bg-secondary/30 relative z-10">
-       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-12 mb-24">
+    <footer className="border-t border-border pt-16 md:pt-24 pb-12 px-6 lg:px-12 bg-bg-secondary/30 relative z-10">
+       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-12 mb-24">
           <div className="col-span-2 lg:col-span-1 space-y-6">
              <Link href="/">
                <Logo size="md" className="grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
